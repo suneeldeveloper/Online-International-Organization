@@ -1,0 +1,224 @@
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    padding: 0px 15%;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2px;
+    gap: 10px;
+}
+.navbar h1{
+    color: #00759b;
+    cursor: pointer;
+    font-size: 30px;
+}
+.language{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.language a{
+    text-decoration: none;
+}
+.language select{
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 4px 6px;
+    outline: none;
+}
+.navbar .google i{
+    color: #00759b;
+    cursor: pointer;
+    padding: 0px 3px;
+}
+.follow{
+    padding: 7px;
+    font-size: 17px;
+    color: #00759b;
+    cursor: pointer;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(200, 194, 194);
+    border-radius: 40px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(221, 213, 213, 0.476);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    gap: 10px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+}
+.header ul li{
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color: #00759b;
+}
+
+
+.section{
+    display: flex;
+    margin-top: 20px;
+}
+.section .sidebar{
+    flex-basis: 25%;
+    padding: 5px;
+}
+.section .sidebar h4{
+    font-size: 13px;
+}
+
+.section .sidebar h2{
+    font-size: 15px;
+    margin: 10px 0px;
+}
+.section .sidebar a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 15px;
+}
+.section .sidebar button{
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 230, 230);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.section .body{
+    flex-basis: 100%;
+    border-left: 3px solid rgba(167, 165, 165, 0.625);
+    padding: 10px 10px 10px 20px;
+}
+.section .body hr{
+    margin: 10px 0px;
+}
+.section .body #italic{
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.section .body a{
+    text-decoration: none;
+}
+
+.table{
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid #f0f0f0;
+    overflow-x: scroll;
+}
+.table thead tr th{
+    background-color: #D8E6F3;
+    color: #000;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.table-scrol{
+    overflow-x: scroll;
+}
+td {
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    color: #222;
+    border: 1px solid #f0f0f0;
+}
+.table a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #00759b;
+}
+.table thead td{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.table tbody td{
+    text-align: center;
+}
+
+#togglebutton{
+    font-size: 20px;
+    display: none;
+}
+
+
+@media (max-width: 960px){
+    body{
+        padding: 0px 5%;
+    }
+}
+@media (max-width: 768px){
+    body{
+        padding: 0px 3%;
+    }
+    .section{
+        display: block;
+    }
+    .section .body{
+        padding: 0px;
+        border: none;
+    }
+    .language{
+        display: none;
+    }
+    .navbar .google {
+        display: none;
+    }
+    #togglebutton{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .header ul{
+        display: block;
+    }
+    .section{
+        z-index: -1;
+    }
+    .section .sidebar{
+        z-index: -1;
+    }
+    .navbar .submit{
+        display: none;
+    }
+}
